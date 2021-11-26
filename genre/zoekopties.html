@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/style/normalize.css">
+    <link rel="stylesheet" href="../resources/style/styles.css">
+    <link rel="shortcut icon" href="../resources/images/favicon.ico">
+    <title>Fletnix - Zoekopties</title>
+</head>
+<body>
+    <header>
+        <h1 id="logo"><a href="ingelogd.html">Fletnix</a></h1>
+        <nav>
+            <ul>
+                <li><a class="active" href="#">Zoekopties</a></li>
+                <li><a class="ingelogd" href="../inloggen.html">Johnny</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="registreer">Zoek naar een film of serie</h1>
+        <section class="container">
+            <form method="get" action="search.html">
+                <div>
+                    <label for="film-titel">Film titel</label>
+                    <input type="text" name="film-titel" id="film-titel" placeholder="Film titel">
+                </div>
+                <div>
+                    <label for="regisseur">Regisseur</label>
+                    <input type="text" name="regisseur" id="regisseur" placeholder="Regisseur">
+                </div>
+                <div>
+                    <label for="genre">Genre</label>
+                    <select name="genre" id="genre">
+                        <option value="niet-gekozen" selected disabled>Selecteer een genre</option>
+                        <option value="onlangs-toegevoegd">Onlangs toegevoegd</option>
+                        <option value="anime">Anime</option>
+                        <option value="kinderseries">Kinderseries</option>
+                        <option value="misdaadfilms">Misdaadfilms</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="publicatiejaar">Publicatiejaar</label>
+                    <input type="number" name="publicatiejaar" id="publicatiejaar" placeholder="Publicatiejaar" min="1900" max="2021">
+                </div>
+                <div>
+                    <button type="submit" class="btn">Zoeken</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="footer"> &copy; 2021 - Johnny Chen</p>
+    </footer>
+</body>
+</html>

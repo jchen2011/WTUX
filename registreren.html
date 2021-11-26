@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/style/normalize.css">
+    <link rel="stylesheet" href="resources/style/styles.css">
+    <link rel="shortcut icon" href="resources/images/favicon.ico">
+    <title>Fletnix - Registreren</title>
+</head>
+<body>
+    <header>
+        <h1 id="logo"><a href="index.html">Fletnix</a></h1>
+        <nav>
+            <ul>
+                <li><a href="overons.html">Over ons</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="privacyverklaring.html">Privacyverklaring</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="filmoverzicht.html">Filmoverzicht</a></li>
+                <li><a href="abonnement.html">Abonnement</a></li>
+                <li><a href="inloggen.html">Inloggen</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="registreer">Wat leuk dat je kiest voor Fletnix</h1>
+        <section class="container">
+            <form method="post" action="registreren.html">
+                <div>
+                    <label for="voornaam">Voornaam</label>
+                    <input type="text" name="voornaam" id="voornaam" required>
+                </div>
+                <div>
+                    <label for="achternaam">Achternaam</label>
+                    <input type="text" name="achternaam" id="achternaam" required>
+                </div>
+                <div>
+                    <label for="land">Land</label>
+                    <input type="text" name="land" id="land" value="Nederland" required>
+                </div>
+                <div>
+                    <label for="geboortedatum">Geboortedatum</label>
+                    <input type="date" name="geboortedatum" id="geboortedatum" required>
+                </div>
+                <div>
+                    <label for="rekeningnummer">Rekeningnummer</label>
+                    <input type="text" name="rekeningnummer" id="rekeningnummer" minlength="18" maxlength="18" 
+                    pattern="[A-Z]{2}[0-9]{2}[A-Z]{4}[0-9]{10}" title="Een rekeningnummer bestaat uit 2 letters, 2 cijfers, 4 letters en vervolgens nog 10 cijfers" required>
+                </div>
+                <div>
+                    <label for="gebruikersnaam">Gebruikersnaam</label>
+                    <input type="text" name="gebruikersnaam" id="gebruikersnaam" required>
+                </div>
+                <div>
+                    <label for="wachtwoord">Wachtwoord</label>
+                    <input type="password" name="wachtwoord" id="wachtwoord" pattern=".{8,}" title="Een wachtwoord bestaat uit minimaal 8 letters of cijfers" required>
+                </div>
+                <div>
+                    <label for="abonnement">Abonnement</label>
+                    <select name="abonnement" id="abonnement">
+                        <option value="basis">Basis</option>
+                        <option value="plus">Plus</option>
+                        <option value="premium">Premium</option>
+                    </select>
+               </div>
+                <div>
+                    <button type="submit" class="btn">Registreren</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="footer"> &copy; 2021 - Johnny Chen</p>
+    </footer>
+</body>
+</html>
